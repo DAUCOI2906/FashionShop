@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modallogin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modallogin_item{
+    position: absolute;
+    width: 600px;
+    min-height: 200px;
+    background-color: rgb(244, 233, 15);
+    border-radius: 10px;
+    animation: dixuong ease-in 0.6s;
+}
+.modallogin_head{
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.btclose{
+    position: absolute;
+    width: 50px;
+    background-color:#fff;
+    right: 0;
+    cursor: pointer;
+    border-radius: 0 0 0 10px;
+}
+.btclose:hover{
+    color: red;
+    
+}
+.modallogin_content label{
+    display: block;
+    margin-left: 10%;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+.modallogin_content input{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding:10px 0;
+    border-radius: 10px;
+}
+.modallogin_content input:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+::placeholder{
+    padding-left: 10px;
+}
+.modallogin_content p{
+    margin-left: 30px;
+}
+#dangnhap{
+    margin: 30px auto;
+    width: 20%;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.open{
+    display: block;
+    text-align: center;
+}
+.thongbao{
+    display: none;
+}
+
+@keyframes dixuong{
+    from{
+        opacity: 0;
+       transform: translateY(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
